@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvie8vq56orai"]
+
+[ext_resource type="Texture2D" uid="uid://byh5d4g43khyl" path="res://assets/sprites/buttonNotPressed.png" id="1_fgskc"]
+[ext_resource type="Texture2D" uid="uid://tpvoaw46c4kk" path="res://assets/sprites/buttonPressed.png" id="2_uk4cl"]
+[ext_resource type="Texture2D" uid="uid://be5g1owwejn6y" path="res://assets/sprites/buttonHover.png" id="3_3lpuo"]
+
+[node name="TestButton" type="TextureButton"]
+offset_left = -15.0
+offset_top = -8.0
+offset_right = 17.0
+offset_bottom = 8.0
+texture_normal = ExtResource("1_fgskc")
+texture_pressed = ExtResource("2_uk4cl")
+texture_hover = ExtResource("3_3lpuo")

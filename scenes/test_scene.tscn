@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://beqldfn57ihbb"]
+
+[ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_ad63a"]
+[ext_resource type="PackedScene" uid="uid://ns2ga3gsdigr" path="res://scenes/player_camera.tscn" id="2_oyfkf"]
+[ext_resource type="Script" path="res://scripts/place_holder_globals.gd" id="2_wwyj3"]
+[ext_resource type="PackedScene" uid="uid://cvie8vq56orai" path="res://scenes/test_button.tscn" id="3_8wufx"]
+[ext_resource type="PackedScene" uid="uid://dx2g82ahm3te" path="res://scenes/player.tscn" id="4_03txp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16ra3"]
+size = Vector2(305, 33)
+
+[node name="TestScene" type="Node2D"]
+script = ExtResource("1_ad63a")
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_wwyj3")
+
+[node name="PlayerCamera" parent="." instance=ExtResource("2_oyfkf")]
+
+[node name="Player" parent="." instance=ExtResource("4_03txp")]
+position = Vector2(-1, -44)
+
+[node name="TestButton" parent="." instance=ExtResource("3_8wufx")]
+offset_left = -16.0
+offset_right = 16.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 36)
+shape = SubResource("RectangleShape2D_16ra3")
