@@ -23,3 +23,11 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_released("ZoomOut"):
+		scale = Vector2(2, 2)
+	elif Input.is_action_just_released("ZoomIn"):
+		scale = Vector2(0.5, 0.5)
+	elif Input.is_action_just_released("ZoomDefault"):
+		scale = Vector2(1, 1)
