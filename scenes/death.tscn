@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://06u2inmc5phm"]
+
+[ext_resource type="Script" path="res://scripts/death.gd" id="1_80df5"]
+
+[node name="Death" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_80df5")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
