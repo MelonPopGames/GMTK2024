@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 150.0
 const JUMP_VELOCITY = -300.0
 var defaultScale = 1
+var hp = 1;
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -47,6 +48,8 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	if PlayerVars.playerHP <= 0:
+		queue_free()
 
 	move_and_slide()
 

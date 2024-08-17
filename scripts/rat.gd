@@ -17,3 +17,7 @@ func _process(delta):
 		DIR = 1
 		animated_sprite.flip_h = false
 	position.x += SPEED * delta * DIR
+
+
+func _on_death_body_entered(body):
+	PlayerVars.playerHP -= 1
