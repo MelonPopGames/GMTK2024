@@ -1,12 +1,12 @@
 [gd_scene load_steps=11 format=3 uid="uid://beqldfn57ihbb"]
 
-[ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_ad63a"]
-[ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/gamemanager.tscn" id="2_njshg"]
-[ext_resource type="PackedScene" uid="uid://ns2ga3gsdigr" path="res://scenes/player_camera.tscn" id="2_oyfkf"]
-[ext_resource type="PackedScene" uid="uid://cvie8vq56orai" path="res://scenes/test_button.tscn" id="3_8wufx"]
-[ext_resource type="PackedScene" uid="uid://dx2g82ahm3te" path="res://scenes/player.tscn" id="4_03txp"]
-[ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/rat.tscn" id="6_d5xpn"]
-[ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="6_rwlcr"]
+[ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_0jiqv"]
+[ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/nonviewable_obj/gamemanager.tscn" id="2_wxxwp"]
+[ext_resource type="PackedScene" uid="uid://dx2g82ahm3te" path="res://scenes/viewable_obj/player.tscn" id="3_u25li"]
+[ext_resource type="PackedScene" uid="uid://ns2ga3gsdigr" path="res://scenes/nonviewable_obj/player_camera.tscn" id="4_bv436"]
+[ext_resource type="PackedScene" uid="uid://cvie8vq56orai" path="res://scenes/viewable_obj/test_button.tscn" id="5_kjlc7"]
+[ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/viewable_obj/rat.tscn" id="6_kycge"]
+[ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="7_ga4xc"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_adtun"]
 distance = -25.0
@@ -18,24 +18,24 @@ size = Vector2(18, 40)
 size = Vector2(18, 11.5)
 
 [node name="TestScene" type="Node2D"]
-script = ExtResource("1_ad63a")
+script = ExtResource("1_0jiqv")
 
-[node name="GameManager" parent="." instance=ExtResource("2_njshg")]
+[node name="GameManager" parent="." instance=ExtResource("2_wxxwp")]
 unique_name_in_owner = true
 
-[node name="Player" parent="." instance=ExtResource("4_03txp")]
+[node name="Player" parent="." instance=ExtResource("3_u25li")]
 position = Vector2(0, -43)
 
-[node name="PlayerCamera" parent="Player" instance=ExtResource("2_oyfkf")]
+[node name="PlayerCamera" parent="Player" instance=ExtResource("4_bv436")]
 position_smoothing_speed = 10.0
 rotation_smoothing_speed = 10.0
 
-[node name="TestButton" parent="." instance=ExtResource("3_8wufx")]
+[node name="TestButton" parent="." instance=ExtResource("5_kjlc7")]
 offset_left = -16.0
 offset_right = 16.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Rat" parent="." instance=ExtResource("6_d5xpn")]
+[node name="Rat" parent="." instance=ExtResource("6_kycge")]
 position = Vector2(-117, 17)
 
 [node name="PhysObjects" type="Node" parent="."]
@@ -54,7 +54,7 @@ shape = SubResource("RectangleShape2D_v7wla")
 [node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall"]
 position = Vector2(61, -11)
 scale = Vector2(0.0615265, 0.128247)
-texture = ExtResource("6_rwlcr")
+texture = ExtResource("7_ga4xc")
 
 [node name="Wall2" type="StaticBody2D" parent="PhysObjects"]
 
@@ -65,7 +65,7 @@ shape = SubResource("RectangleShape2D_f2pmw")
 [node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall2"]
 position = Vector2(-68, 18)
 scale = Vector2(0.0615265, 0.0381495)
-texture = ExtResource("6_rwlcr")
+texture = ExtResource("7_ga4xc")
 
 [node name="Wall3" type="StaticBody2D" parent="PhysObjects"]
 
@@ -76,4 +76,4 @@ shape = SubResource("RectangleShape2D_f2pmw")
 [node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall3"]
 position = Vector2(-166, 19)
 scale = Vector2(0.0615265, 0.0381495)
-texture = ExtResource("6_rwlcr")
+texture = ExtResource("7_ga4xc")

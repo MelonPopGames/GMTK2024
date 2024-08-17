@@ -20,4 +20,4 @@ func _process(delta):
 
 
 func _on_death_body_entered(body):
-	PlayerVars.playerHP -= 1
+	gameManager.playerHP -= 1

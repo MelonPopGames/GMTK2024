@@ -48,7 +48,7 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-	if PlayerVars.playerHP <= 0:
+	if gameManager.playerHP <= 0:
 		queue_free()
 
 	move_and_slide()
