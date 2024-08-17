@@ -19,5 +19,12 @@ offset_right = 691.0
 offset_bottom = 503.0
 text = "QUIT"
 
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 535.0
+offset_top = 165.0
+offset_right = 631.0
+offset_bottom = 208.0
+text = "TITLE HERE"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
