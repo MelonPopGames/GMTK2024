@@ -1,20 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://beqldfn57ihbb"]
+[gd_scene load_steps=9 format=3 uid="uid://beqldfn57ihbb"]
 
 [ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_ad63a"]
+[ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/gamemanager.tscn" id="2_njshg"]
 [ext_resource type="PackedScene" uid="uid://ns2ga3gsdigr" path="res://scenes/player_camera.tscn" id="2_oyfkf"]
-[ext_resource type="Script" path="res://scripts/place_holder_globals.gd" id="2_wwyj3"]
 [ext_resource type="PackedScene" uid="uid://cvie8vq56orai" path="res://scenes/test_button.tscn" id="3_8wufx"]
 [ext_resource type="PackedScene" uid="uid://dx2g82ahm3te" path="res://scenes/player.tscn" id="4_03txp"]
+[ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="6_rwlcr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_adtun"]
 distance = -25.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2pmw"]
+size = Vector2(20, 39)
+
 [node name="TestScene" type="Node2D"]
 script = ExtResource("1_ad63a")
 
-[node name="GameManager" type="Node" parent="."]
+[node name="GameManager" parent="." instance=ExtResource("2_njshg")]
 unique_name_in_owner = true
-script = ExtResource("2_wwyj3")
 
 [node name="Player" parent="." instance=ExtResource("4_03txp")]
 position = Vector2(0, -43)
@@ -32,3 +35,14 @@ metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_adtun")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(61, -11)
+shape = SubResource("RectangleShape2D_f2pmw")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(61, -11)
+scale = Vector2(0.0615265, 0.128247)
+texture = ExtResource("6_rwlcr")
