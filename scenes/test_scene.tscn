@@ -45,35 +45,35 @@ position = Vector2(-117, 17)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_adtun")
 
-[node name="wall" type="StaticBody2D" parent="PhysObjects"]
+[node name="Wall" type="StaticBody2D" parent="PhysObjects"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/Wall"]
 position = Vector2(61, -11)
 shape = SubResource("RectangleShape2D_v7wla")
 
-[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/wall"]
+[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall"]
 position = Vector2(61, -11)
 scale = Vector2(0.0615265, 0.128247)
 texture = ExtResource("6_rwlcr")
 
-[node name="wall2" type="StaticBody2D" parent="PhysObjects"]
+[node name="Wall2" type="StaticBody2D" parent="PhysObjects"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/wall2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/Wall2"]
 position = Vector2(-68, 18)
 shape = SubResource("RectangleShape2D_f2pmw")
 
-[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/wall2"]
+[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall2"]
 position = Vector2(-68, 18)
 scale = Vector2(0.0615265, 0.0381495)
 texture = ExtResource("6_rwlcr")
 
-[node name="wall3" type="StaticBody2D" parent="PhysObjects"]
+[node name="Wall3" type="StaticBody2D" parent="PhysObjects"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/wall3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/Wall3"]
 position = Vector2(-166, 19)
 shape = SubResource("RectangleShape2D_f2pmw")
 
-[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/wall3"]
+[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall3"]
 position = Vector2(-166, 19)
 scale = Vector2(0.0615265, 0.0381495)
 texture = ExtResource("6_rwlcr")
