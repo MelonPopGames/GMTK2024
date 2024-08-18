@@ -66,3 +66,13 @@ func _process(delta: float) -> void:
 	elif Input.is_action_just_released("ZoomDefault"):
 		scale = game_manager.adjustZoom(defaultScale, 1)
 		gameManager.playerSize = 2
+	
+	if gameManager.playerSize == 2:
+		SPEED = 150.0
+		JUMP_VELOCITY = -300.0
+	elif gameManager.playerSize == 1:
+		SPEED = 200.0
+		JUMP_VELOCITY = -150.0
+	else:
+		SPEED = 100.0
+		JUMP_VELOCITY = -450.0
