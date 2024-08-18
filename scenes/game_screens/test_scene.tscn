@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://beqldfn57ihbb"]
+[gd_scene load_steps=13 format=3 uid="uid://beqldfn57ihbb"]
 
 [ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_0jiqv"]
 [ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/nonviewable_obj/gamemanager.tscn" id="2_wxxwp"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://cvie8vq56orai" path="res://scenes/viewable_obj/test_button.tscn" id="5_kjlc7"]
 [ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/viewable_obj/rat.tscn" id="6_kycge"]
 [ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="7_ga4xc"]
+[ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="8_yd4di"]
+[ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="9_jj0kg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_adtun"]
 distance = -25.0
@@ -38,42 +40,70 @@ metadata/_edit_use_anchors_ = true
 [node name="Rat" parent="." instance=ExtResource("6_kycge")]
 position = Vector2(-117, 17)
 
-[node name="PhysObjects" type="Node" parent="."]
+[node name="Dog" parent="." instance=ExtResource("9_jj0kg")]
+position = Vector2(-319, 15)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="PhysObjects"]
+[node name="Rabbit" parent="." instance=ExtResource("8_yd4di")]
+position = Vector2(-191, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/StaticBody2D"]
+[node name="walls" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_adtun")
 
-[node name="Wall" type="StaticBody2D" parent="PhysObjects"]
+[node name="Wall" type="StaticBody2D" parent="walls"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/Wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/Wall"]
 position = Vector2(61, -11)
 shape = SubResource("RectangleShape2D_v7wla")
 
-[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall"]
+[node name="Sprite2D" type="Sprite2D" parent="walls/Wall"]
 position = Vector2(61, -11)
 scale = Vector2(0.0615265, 0.128247)
 texture = ExtResource("7_ga4xc")
 
-[node name="Wall2" type="StaticBody2D" parent="PhysObjects"]
+[node name="Wall2" type="StaticBody2D" parent="walls"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/Wall2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/Wall2"]
 position = Vector2(-68, 18)
 shape = SubResource("RectangleShape2D_f2pmw")
 
-[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall2"]
+[node name="Sprite2D" type="Sprite2D" parent="walls/Wall2"]
 position = Vector2(-68, 18)
 scale = Vector2(0.0615265, 0.0381495)
 texture = ExtResource("7_ga4xc")
 
-[node name="Wall3" type="StaticBody2D" parent="PhysObjects"]
+[node name="Wall3" type="StaticBody2D" parent="walls"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysObjects/Wall3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/Wall3"]
 position = Vector2(-166, 19)
 shape = SubResource("RectangleShape2D_f2pmw")
 
-[node name="Sprite2D" type="Sprite2D" parent="PhysObjects/Wall3"]
+[node name="Sprite2D" type="Sprite2D" parent="walls/Wall3"]
 position = Vector2(-166, 19)
+scale = Vector2(0.0615265, 0.0381495)
+texture = ExtResource("7_ga4xc")
+
+[node name="Wall4" type="StaticBody2D" parent="walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/Wall4"]
+position = Vector2(-253.125, 19.875)
+shape = SubResource("RectangleShape2D_f2pmw")
+
+[node name="Sprite2D" type="Sprite2D" parent="walls/Wall4"]
+position = Vector2(-254.125, 19.875)
+scale = Vector2(0.0615265, 0.0381495)
+texture = ExtResource("7_ga4xc")
+
+[node name="Wall5" type="StaticBody2D" parent="walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/Wall5"]
+position = Vector2(-391, 19)
+shape = SubResource("RectangleShape2D_f2pmw")
+
+[node name="Sprite2D" type="Sprite2D" parent="walls/Wall5"]
+position = Vector2(-391, 19)
 scale = Vector2(0.0615265, 0.0381495)
 texture = ExtResource("7_ga4xc")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://cx1bqqp4wqpx0"]
+[gd_scene load_steps=13 format=3 uid="uid://cx1bqqp4wqpx0"]
 
-[ext_resource type="Script" path="res://scripts/rat.gd" id="1_ucq6r"]
+[ext_resource type="Script" path="res://scripts/enemy_move.gd" id="1_ucq6r"]
 [ext_resource type="Texture2D" uid="uid://bekxfi37nb3cw" path="res://assets/sprites/Rat1.png" id="2_5flw2"]
+[ext_resource type="Script" path="res://scripts/size_info/size_one.gd" id="2_5id2q"]
 [ext_resource type="PackedScene" uid="uid://fv7g5f7oe8li" path="res://scenes/nonviewable_obj/death_fix.tscn" id="3_ghkyh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8kt2q"]
@@ -55,12 +56,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k4puq"]
-size = Vector2(17, 10)
+size = Vector2(13, 8)
 
 [node name="Rat" type="Node2D"]
 script = ExtResource("1_ucq6r")
 
+[node name="Size" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_5id2q")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_boopj")
 autoplay = "default"
 frame_progress = 0.9862
@@ -68,11 +74,11 @@ frame_progress = 0.9862
 [node name="DeathFix" parent="." instance=ExtResource("3_ghkyh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathFix"]
-position = Vector2(6.5, 3)
+position = Vector2(4.5, 2)
 shape = SubResource("RectangleShape2D_k4puq")
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
-target_position = Vector2(-19, 0)
+target_position = Vector2(-15, 0)
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-target_position = Vector2(18, 0)
+target_position = Vector2(15, 0)
