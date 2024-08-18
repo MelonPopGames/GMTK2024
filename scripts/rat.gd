@@ -18,6 +18,6 @@ func _process(delta):
 		animated_sprite.flip_h = false
 	position.x += SPEED * delta * DIR
 
-
-func _on_death_body_entered(body):
-	gameManager.playerHP -= 1
+#we can bring this back if we want to have more than one health
+#func _on_death_body_entered(body):
+	#gameManager.playerHP -= 1

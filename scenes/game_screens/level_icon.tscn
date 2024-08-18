@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfxpj4gy2mwus"]
+[gd_scene load_steps=3 format=3 uid="uid://djvcydiioemoq"]
 
 [ext_resource type="Script" path="res://scripts/level_icon.gd" id="1_hfrsi"]
 [ext_resource type="Texture2D" uid="uid://crj46su3rkvhm" path="res://assets/sprites/nukebutton.png" id="2_8read"]

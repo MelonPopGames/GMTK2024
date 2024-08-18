@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6oo1hgr5f4t2"]
+[gd_scene load_steps=3 format=3 uid="uid://b2dn36syi1qu4"]
 
 [ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="1_8024m"]
 [ext_resource type="Script" path="res://scenes/game_screens/player_icon.gd" id="2_1ld8c"]

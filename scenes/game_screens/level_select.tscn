@@ -1,8 +1,8 @@
-[gd_scene load_steps=24 format=3 uid="uid://bydelvegju37g"]
+[gd_scene load_steps=24 format=3 uid="uid://bl6oprc4gru3k"]
 
-[ext_resource type="PackedScene" uid="uid://dfxpj4gy2mwus" path="res://scenes/game_screens/level_icon.tscn" id="1_bqyuq"]
+[ext_resource type="PackedScene" uid="uid://djvcydiioemoq" path="res://scenes/game_screens/level_icon.tscn" id="1_bqyuq"]
 [ext_resource type="Script" path="res://scenes/game_screens/level_select.gd" id="1_vl4ct"]
-[ext_resource type="PackedScene" uid="uid://b6oo1hgr5f4t2" path="res://scenes/game_screens/player_icon.tscn" id="3_2mikj"]
+[ext_resource type="PackedScene" uid="uid://b2dn36syi1qu4" path="res://scenes/game_screens/player_icon.tscn" id="3_2mikj"]
 [ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/blobanIdle.png" id="4_shhc0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2y4wm"]
