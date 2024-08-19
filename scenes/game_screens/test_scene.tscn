@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://beqldfn57ihbb"]
+[gd_scene load_steps=15 format=3 uid="uid://beqldfn57ihbb"]
 
 [ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_0jiqv"]
 [ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/nonviewable_obj/gamemanager.tscn" id="2_wxxwp"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="7_ga4xc"]
 [ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="8_yd4di"]
 [ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="9_jj0kg"]
+[ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="10_qcqo6"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_adtun"]
 distance = -25.0
@@ -18,6 +19,9 @@ size = Vector2(18, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2pmw"]
 size = Vector2(18, 11.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r3wdv"]
+size = Vector2(20, 14)
 
 [node name="TestScene" type="Node2D"]
 script = ExtResource("1_0jiqv")
@@ -107,3 +111,10 @@ shape = SubResource("RectangleShape2D_f2pmw")
 position = Vector2(-391, 19)
 scale = Vector2(0.0615265, 0.0381495)
 texture = ExtResource("7_ga4xc")
+
+[node name="FixedSizeArea" parent="." instance=ExtResource("10_qcqo6")]
+position = Vector2(63, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FixedSizeArea"]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_r3wdv")
