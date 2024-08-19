@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://y8poosedrixx"]
+
+[ext_resource type="Texture2D" uid="uid://blt7fr13v6gsr" path="res://assets/sprites/temp/henryPlaceholderson.png" id="1_3tymq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruh5k"]
+size = Vector2(31, 29)
+
+[node name="PushableBox" type="RigidBody2D"]
+linear_damp = 5.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ruh5k")
+
+[node name="HenryPlaceholderson" type="Sprite2D" parent="."]
+position = Vector2(0.499999, -2.25)
+scale = Vector2(2.9375, 2.09375)
+texture = ExtResource("1_3tymq")

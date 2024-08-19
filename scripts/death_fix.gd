@@ -6,12 +6,12 @@ extends Area2D
 func _on_body_entered(body):
 	if size.size >= gameManager.playerSize:
 		print("aids.")
-		Engine.time_scale = 0.5
-		body.get_node("CollisionShape2D").queue_free()
+		gameManager.playerHP = 0
+		#body.get_node("CollisionShape2D").queue_free()
 		timer.start()
 		
 
 func _on_timer_timeout():
-	Engine.time_scale = 1
 	gameManager.playerSize = 2
+	gameManager.playerHP = 1
 	get_tree().reload_current_scene()
