@@ -5,7 +5,6 @@
 [ext_resource type="Script" path="res://scripts/size_info/size_one.gd" id="2_5id2q"]
 [ext_resource type="PackedScene" uid="uid://fv7g5f7oe8li" path="res://scenes/nonviewable_obj/death_fix.tscn" id="3_ghkyh"]
 
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_8kt2q"]
 atlas = ExtResource("2_5flw2")
 region = Rect2(0, 0, 32, 16)

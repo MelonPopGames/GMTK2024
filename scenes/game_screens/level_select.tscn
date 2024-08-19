@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://b2dn36syi1qu4" path="res://scenes/game_screens/player_icon.tscn" id="3_2mikj"]
 [ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/bloban/bloban_idle.png" id="4_shhc0"]
 
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_2y4wm"]
 atlas = ExtResource("4_shhc0")
 region = Rect2(304, 0, 16, 16)

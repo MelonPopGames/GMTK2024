@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://blt7fr13v6gsr" path="res://assets/sprites/temp/henryPlaceholderson.png" id="2_f6xx8"]
 [ext_resource type="PackedScene" uid="uid://fv7g5f7oe8li" path="res://scenes/nonviewable_obj/death_fix.tscn" id="3_bu6h2"]
 
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_4fm6u"]
 atlas = ExtResource("2_f6xx8")
 region = Rect2(0, 0, 16, 16)

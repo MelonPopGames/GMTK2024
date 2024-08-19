@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/sprites/temp/theTF2Coconut/emprah.png" id="1_8024m"]
 [ext_resource type="Script" path="res://scenes/game_screens/player_icon.gd" id="2_1ld8c"]
 
-
 [node name="PlayerIcon" type="TextureRect"]
 offset_right = 32.0
 offset_bottom = 32.0
