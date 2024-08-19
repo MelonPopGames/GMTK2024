@@ -1,19 +1,68 @@
-[gd_scene load_steps=8 format=3 uid="uid://oiselovvcp46"]
+[gd_scene load_steps=16 format=3 uid="uid://oiselovvcp46"]
 
 [ext_resource type="Script" path="res://scripts/enemy_move.gd" id="1_ku0cg"]
-[ext_resource type="Texture2D" uid="uid://blt7fr13v6gsr" path="res://assets/sprites/temp/henryPlaceholderson.png" id="2_kd46r"]
 [ext_resource type="Script" path="res://scripts/size_info/size_three.gd" id="2_o7axw"]
+[ext_resource type="Texture2D" uid="uid://dlixoc7yufldk" path="res://assets/sprites/enemies/dog.png" id="3_hwu5e"]
 [ext_resource type="PackedScene" uid="uid://fv7g5f7oe8li" path="res://scenes/nonviewable_obj/death_fix.tscn" id="3_xec2u"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4fm6u"]
-atlas = ExtResource("2_kd46r")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekuf5"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_boopj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3feu"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vla5"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv48f"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqi50"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpqou"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeppk"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2k5xx"]
+atlas = ExtResource("3_hwu5e")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_imywn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4fm6u")
+"texture": SubResource("AtlasTexture_ekuf5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3feu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vla5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv48f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqi50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpqou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeppk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2k5xx")
 }],
 "loop": true,
 "name": &"default",
@@ -21,7 +70,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k4puq"]
-size = Vector2(53.75, 33.125)
+size = Vector2(46.875, 27.5625)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ycp2y"]
+radius = 9.0
 
 [node name="Dog" type="Node2D"]
 script = ExtResource("1_ku0cg")
@@ -31,20 +83,23 @@ unique_name_in_owner = true
 script = ExtResource("2_o7axw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, -6)
-scale = Vector2(5.34375, 2.34375)
-sprite_frames = SubResource("SpriteFrames_boopj")
+position = Vector2(-2, -17)
+sprite_frames = SubResource("SpriteFrames_imywn")
 autoplay = "default"
-frame_progress = 0.9862
+frame_progress = 0.909732
 
 [node name="DeathFix" parent="." instance=ExtResource("3_xec2u")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathFix"]
-position = Vector2(-0.875, -3.4375)
+position = Vector2(-3.4375, -1.78125)
 shape = SubResource("RectangleShape2D_k4puq")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DeathFix"]
+position = Vector2(16, -14)
+shape = SubResource("CircleShape2D_ycp2y")
+
 [node name="RayCastLeft" type="RayCast2D" parent="."]
-target_position = Vector2(-33, 0)
+target_position = Vector2(-43, 0)
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-target_position = Vector2(30, 0)
+target_position = Vector2(33, 0)
