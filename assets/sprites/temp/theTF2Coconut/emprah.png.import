@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bekxfi37nb3cw"
-path="res://.godot/imported/Rat1.png-45b8707ae679efd1d683f771b358b344.ctex"
+uid="uid://ds2tuj0fk4iob"
+path="res://.godot/imported/emprah.png-d4afa44db5ac14dd2fa93aa864c5e921.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Rat1.png"
-dest_files=["res://.godot/imported/Rat1.png-45b8707ae679efd1d683f771b358b344.ctex"]
+source_file="res://assets/sprites/temp/theTF2Coconut/emprah.png"
+dest_files=["res://.godot/imported/emprah.png-d4afa44db5ac14dd2fa93aa864c5e921.ctex"]
 
 [params]
 
