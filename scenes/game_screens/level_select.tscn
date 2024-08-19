@@ -3,7 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://djvcydiioemoq" path="res://scenes/game_screens/level_icon.tscn" id="1_bqyuq"]
 [ext_resource type="Script" path="res://scenes/game_screens/level_select.gd" id="1_vl4ct"]
 [ext_resource type="PackedScene" uid="uid://b2dn36syi1qu4" path="res://scenes/game_screens/player_icon.tscn" id="3_2mikj"]
-[ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/blobanIdle.png" id="4_shhc0"]
+[ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/bloban/bloban_idle.png" id="4_shhc0"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2y4wm"]
 atlas = ExtResource("4_shhc0")

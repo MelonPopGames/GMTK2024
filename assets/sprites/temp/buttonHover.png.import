@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds2tuj0fk4iob"
-path="res://.godot/imported/emprah.png-1d52f17c77e4d61adc557cf37eaef596.ctex"
+uid="uid://be5g1owwejn6y"
+path="res://.godot/imported/buttonHover.png-945b6bccb941da413c367351aae97481.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/theTF2Coconut/emprah.png"
-dest_files=["res://.godot/imported/emprah.png-1d52f17c77e4d61adc557cf37eaef596.ctex"]
+source_file="res://assets/sprites/temp/buttonHover.png"
+dest_files=["res://.godot/imported/buttonHover.png-945b6bccb941da413c367351aae97481.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blt7fr13v6gsr"
-path="res://.godot/imported/henryPlaceholderson.png-ff7be8663b3456fbe4636a9bf0a13344.ctex"
+uid="uid://bekxfi37nb3cw"
+path="res://.godot/imported/rat.png-f3a9241987b25deac697df549f6f899e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/henryPlaceholderson.png"
-dest_files=["res://.godot/imported/henryPlaceholderson.png-ff7be8663b3456fbe4636a9bf0a13344.ctex"]
+source_file="res://assets/sprites/enemies/rat.png"
+dest_files=["res://.godot/imported/rat.png-f3a9241987b25deac697df549f6f899e.ctex"]
 
 [params]
 

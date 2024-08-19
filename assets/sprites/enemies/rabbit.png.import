@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rmr7vbfaqp2e"
-path="res://.godot/imported/blobanWalk.png-ef7888c79ab9fdb7d9e76a6f2f0c9a38.ctex"
+uid="uid://cmm34k1ujmtn2"
+path="res://.godot/imported/rabbit.png-3c297326ba0aa78bb363f466e31e48eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/blobanWalk.png"
-dest_files=["res://.godot/imported/blobanWalk.png-ef7888c79ab9fdb7d9e76a6f2f0c9a38.ctex"]
+source_file="res://assets/sprites/enemies/rabbit.png"
+dest_files=["res://.godot/imported/rabbit.png-3c297326ba0aa78bb363f466e31e48eb.ctex"]
 
 [params]
 

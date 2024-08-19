@@ -1,9 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://oiselovvcp46"]
 
 [ext_resource type="Script" path="res://scripts/enemy_move.gd" id="1_ku0cg"]
-[ext_resource type="Texture2D" uid="uid://blt7fr13v6gsr" path="res://assets/sprites/henryPlaceholderson.png" id="2_kd46r"]
+[ext_resource type="Texture2D" uid="uid://blt7fr13v6gsr" path="res://assets/sprites/temp/henryPlaceholderson.png" id="2_kd46r"]
 [ext_resource type="Script" path="res://scripts/size_info/size_three.gd" id="2_o7axw"]
 [ext_resource type="PackedScene" uid="uid://fv7g5f7oe8li" path="res://scenes/nonviewable_obj/death_fix.tscn" id="3_xec2u"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4fm6u"]
 atlas = ExtResource("2_kd46r")

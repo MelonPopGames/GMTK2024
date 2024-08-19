@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ns2ga3gsdigr" path="res://scenes/nonviewable_obj/player_camera.tscn" id="4_bv436"]
 [ext_resource type="PackedScene" uid="uid://cvie8vq56orai" path="res://scenes/viewable_obj/test_button.tscn" id="5_kjlc7"]
 [ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/viewable_obj/rat.tscn" id="6_kycge"]
-[ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/theTF2Coconut/emprah.png" id="7_ga4xc"]
+[ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/sprites/temp/theTF2Coconut/emprah.png" id="7_ga4xc"]
 [ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="8_yd4di"]
 [ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="9_jj0kg"]
 [ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="10_qcqo6"]

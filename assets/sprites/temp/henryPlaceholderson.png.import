@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tpvoaw46c4kk"
-path="res://.godot/imported/buttonPressed.png-c77e3cc11dec51a8e206411c8076a805.ctex"
+uid="uid://blt7fr13v6gsr"
+path="res://.godot/imported/henryPlaceholderson.png-94b3990dfe8eed3bbff372205efb50dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/buttonPressed.png"
-dest_files=["res://.godot/imported/buttonPressed.png-c77e3cc11dec51a8e206411c8076a805.ctex"]
+source_file="res://assets/sprites/temp/henryPlaceholderson.png"
+dest_files=["res://.godot/imported/henryPlaceholderson.png-94b3990dfe8eed3bbff372205efb50dd.ctex"]
 
 [params]
 

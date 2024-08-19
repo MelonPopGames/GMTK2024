@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crj46su3rkvhm"
-path="res://.godot/imported/nukebutton.png-741f44c6e5e409d7a4e01fcdcae15959.ctex"
+uid="uid://ctjygr35yobq7"
+path="res://.godot/imported/bloban_idle.png-9d92ae05be0d27f7372451c2e721499f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/nukebutton.png"
-dest_files=["res://.godot/imported/nukebutton.png-741f44c6e5e409d7a4e01fcdcae15959.ctex"]
+source_file="res://assets/sprites/bloban/bloban_idle.png"
+dest_files=["res://.godot/imported/bloban_idle.png-9d92ae05be0d27f7372451c2e721499f.ctex"]
 
 [params]
 
