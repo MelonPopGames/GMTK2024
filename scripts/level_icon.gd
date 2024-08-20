@@ -2,8 +2,6 @@
 extends Control
 class_name LevelIcon
 
-@onready var sprite: Sprite2D = $Sprite2D
-
 @export var level_name = "1"
 @export_file("*.tscn") var next_scene_path: String
 @export var next_level_up: LevelIcon
@@ -19,4 +17,3 @@ func _ready():
 func _process(delta):
 	if Engine.is_editor_hint():
 		$Label.text = str(level_name)
-	
