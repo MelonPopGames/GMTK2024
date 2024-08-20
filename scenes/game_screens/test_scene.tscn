@@ -7,12 +7,12 @@
 [ext_resource type="FontFile" uid="uid://cflfcdxy3mylt" path="res://assets/fonts/PixelOperator8.ttf" id="5_d5uka"]
 [ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/viewable_obj/rat.tscn" id="6_kycge"]
 [ext_resource type="Texture2D" uid="uid://ds2tuj0fk4iob" path="res://assets/sprites/temp/theTF2Coconut/emprah.png" id="7_ga4xc"]
-[ext_resource type="PackedScene" path="res://scenes/viewable_obj/rabbit.tscn" id="8_yd4di"]
-[ext_resource type="PackedScene" path="res://scenes/viewable_obj/dog.tscn" id="9_jj0kg"]
+[ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="8_yd4di"]
+[ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="9_jj0kg"]
 [ext_resource type="Texture2D" uid="uid://dv6d8617c5oiq" path="res://assets/sprites/world_tileset.png" id="10_jdk7p"]
-[ext_resource type="PackedScene" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="10_qcqo6"]
-[ext_resource type="PackedScene" path="res://scenes/viewable_obj/pushable_box.tscn" id="12_71ori"]
-[ext_resource type="PackedScene" path="res://scenes/viewable_obj/game_win_zone.tscn" id="13_udbfe"]
+[ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="10_qcqo6"]
+[ext_resource type="PackedScene" uid="uid://y8poosedrixx" path="res://scenes/viewable_obj/pushable_box.tscn" id="12_71ori"]
+[ext_resource type="PackedScene" uid="uid://dvclcwk5bidqq" path="res://scenes/viewable_obj/game_win_zone.tscn" id="13_udbfe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v7wla"]
 size = Vector2(18, 40)
