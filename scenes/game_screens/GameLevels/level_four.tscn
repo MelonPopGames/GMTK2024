@@ -20,15 +20,6 @@ distance = -196.0
 [node name="LevelFour" type="Node2D"]
 script = ExtResource("1_m7dnl")
 
-[node name="PushableBox" parent="." instance=ExtResource("7_dh02n")]
-position = Vector2(367, -177)
-
-[node name="PushableBox2" parent="." instance=ExtResource("7_dh02n")]
-position = Vector2(447, -272)
-
-[node name="PushableBox3" parent="." instance=ExtResource("7_dh02n")]
-position = Vector2(1807, -145)
-
 [node name="Size" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("2_u4arn")
@@ -37,9 +28,17 @@ script = ExtResource("2_u4arn")
 unique_name_in_owner = true
 
 [node name="Player" parent="." instance=ExtResource("4_eqypf")]
-position = Vector2(1765, -153)
 
 [node name="PlayerCamera" parent="Player" instance=ExtResource("5_ia4bb")]
+
+[node name="PushableBox" parent="." instance=ExtResource("7_dh02n")]
+position = Vector2(367, -177)
+
+[node name="PushableBox2" parent="." instance=ExtResource("7_dh02n")]
+position = Vector2(447, -272)
+
+[node name="PushableBox3" parent="." instance=ExtResource("7_dh02n")]
+position = Vector2(1807, -145)
 
 [node name="TileMap" type="Node" parent="."]
 
