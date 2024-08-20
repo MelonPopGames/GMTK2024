@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://c8vbj8fx5ia4d"]
+[gd_scene load_steps=14 format=4 uid="uid://c8vbj8fx5ia4d"]
 
 [ext_resource type="Script" path="res://scripts/Levels/level_two.gd" id="1_67l61"]
 [ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/nonviewable_obj/gamemanager.tscn" id="2_n8fxn"]
@@ -11,18 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="9_a7248"]
 [ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/viewable_obj/rat.tscn" id="10_vvtaf"]
 [ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="11_3lpu6"]
-[ext_resource type="Script" path="res://scripts/spagethie.gd" id="12_ijinl"]
-[ext_resource type="Texture2D" uid="uid://dv6d8617c5oiq" path="res://assets/sprites/world_tileset.png" id="13_dubkv"]
 [ext_resource type="FontFile" uid="uid://cflfcdxy3mylt" path="res://assets/fonts/PixelOperator8.ttf" id="13_n8y64"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5e06"]
 size = Vector2(110.5, 9)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lm05i"]
-size = Vector2(131, 32)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ds77"]
-size = Vector2(16, 32)
 
 [node name="LevelTwo" type="Node2D"]
 script = ExtResource("1_67l61")
@@ -100,27 +92,6 @@ position = Vector2(725, 602)
 [node name="Rabbit4" parent="Enemies" instance=ExtResource("9_a7248")]
 position = Vector2(213, 598)
 
-[node name="Spagethie" type="Node" parent="."]
-script = ExtResource("12_ijinl")
-
-[node name="Area2D" type="Area2D" parent="Spagethie"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Spagethie/Area2D"]
-position = Vector2(829.5, 287)
-shape = SubResource("RectangleShape2D_lm05i")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Spagethie"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Spagethie/StaticBody2D"]
-position = Vector2(408, 336)
-shape = SubResource("RectangleShape2D_7ds77")
-
-[node name="Sprite2D" type="Sprite2D" parent="Spagethie/StaticBody2D"]
-position = Vector2(408, 336)
-texture = ExtResource("13_dubkv")
-region_enabled = true
-region_rect = Rect2(16, 0, 16, 32)
-
 [node name="intro" type="Label" parent="."]
 offset_left = 767.0
 offset_top = 268.0
@@ -132,6 +103,16 @@ text = "box has to be
 in here or else exit 
 wont open!!"
 
+[node name="intro3" type="Label" parent="."]
+offset_left = 71.0
+offset_top = 579.0
+offset_right = 196.0
+offset_bottom = 607.0
+theme_override_fonts/font = ExtResource("13_n8y64")
+theme_override_font_sizes/font_size = 8
+text = "the box wasn't 
+actually necessary"
+
 [node name="intro2" type="Label" parent="."]
 offset_left = 58.0
 offset_top = -49.0
@@ -141,6 +122,3 @@ theme_override_fonts/font = ExtResource("13_n8y64")
 theme_override_font_sizes/font_size = 8
 text = "This way first!! 
 ---->"
-
-[connection signal="body_entered" from="Spagethie/Area2D" to="Spagethie" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Spagethie/Area2D" to="Spagethie" method="_on_area_2d_body_exited"]
