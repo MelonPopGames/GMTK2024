@@ -1,8 +1,6 @@
 @tool
 extends Control
-class_name LevelIcon
 
-@export var level_name := "1"
 @export_file("*.tscn") var next_scene_path: String
 @export var next_level_up: LevelIcon
 @export var next_level_down: LevelIcon
@@ -11,9 +9,9 @@ class_name LevelIcon
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Label.text = str(level_name)
+	$Label.text = "Tutorial"
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Engine.is_editor_hint():
-		$Label.text = str(level_name)
+		$Label.text = "Tutorial"
