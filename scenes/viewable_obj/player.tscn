@@ -1,9 +1,10 @@
-[gd_scene load_steps=52 format=3 uid="uid://dx2g82ahm3te"]
+[gd_scene load_steps=53 format=3 uid="uid://dx2g82ahm3te"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rt4a0"]
 [ext_resource type="Texture2D" uid="uid://17cy40r6wq2g" path="res://assets/sprites/bloban/bloban_death.png" id="2_g4wwb"]
 [ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/bloban/bloban_idle.png" id="2_un6ee"]
 [ext_resource type="Texture2D" uid="uid://rmr7vbfaqp2e" path="res://assets/sprites/bloban/bloban_walk.png" id="3_yy17l"]
+[ext_resource type="FontFile" uid="uid://n080e553t4f8" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="5_2rn3c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8521b"]
 atlas = ExtResource("2_g4wwb")
@@ -456,3 +457,12 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_0244s")
+
+[node name="Count" type="Label" parent="."]
+offset_left = -4.0
+offset_top = -20.0
+offset_right = 4.0
+offset_bottom = -10.0
+theme_override_fonts/font = ExtResource("5_2rn3c")
+theme_override_font_sizes/font_size = 8
+text = "0"

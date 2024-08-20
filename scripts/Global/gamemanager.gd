@@ -1,5 +1,8 @@
 extends Node
 
+@onready var count: Label = %Count
+
+
 var zoom = Vector2(1,1)
 var newZoom = 1
 var playerHP = 1

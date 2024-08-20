@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dv6d8617c5oiq" path="res://assets/sprites/world_tileset.png" id="10_jdk7p"]
 [ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="10_qcqo6"]
 [ext_resource type="PackedScene" uid="uid://y8poosedrixx" path="res://scenes/viewable_obj/pushable_box.tscn" id="12_71ori"]
-[ext_resource type="PackedScene" uid="uid://dvclcwk5bidqq" path="res://scenes/viewable_obj/game_win_zone.tscn" id="13_udbfe"]
+[ext_resource type="PackedScene" path="res://scenes/viewable_obj/game_win_zone.tscn" id="13_udbfe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v7wla"]
 size = Vector2(18, 40)

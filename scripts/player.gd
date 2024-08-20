@@ -15,6 +15,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var game_manager: Node = %GameManager
+@onready var count: Label = $Count
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -67,6 +68,9 @@ func _physics_process(delta):
 		animated_sprite_2d.play("death")
 
 func _process(delta: float) -> void:
+	
+	count.text = str(gameManager.timeCanChange)
+	
 	if gameManager.canChangeSize and gameManager.timeCanChange != 0:
 		if Input.is_action_just_released("ZoomOut") and gameManager.playerSize != 3:
 			scale = game_manager.adjustZoom(defaultScale, 2)
