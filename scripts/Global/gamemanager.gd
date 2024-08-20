@@ -3,6 +3,8 @@ extends Node
 var zoom = Vector2(1,1)
 var newZoom = 1
 var playerHP = 1
+var gameWin = false
+var timeCanChange = 3
 
 #Three player sizes, 2 is default, 1 is small, 3 is large
 var playerSize = 2

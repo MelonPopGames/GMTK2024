@@ -55,7 +55,7 @@ script = ExtResource("2_aga2s")
 position = Vector2(-3, -5)
 sprite_frames = SubResource("SpriteFrames_cvnej")
 autoplay = "default"
-frame_progress = 0.457661
+frame_progress = 0.409417
 
 [node name="DeathFix" parent="." instance=ExtResource("3_bu6h2")]
 
