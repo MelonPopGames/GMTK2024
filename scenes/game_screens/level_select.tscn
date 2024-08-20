@@ -1,9 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://bl6oprc4gru3k"]
+[gd_scene load_steps=25 format=3 uid="uid://bl6oprc4gru3k"]
 
 [ext_resource type="PackedScene" uid="uid://djvcydiioemoq" path="res://scenes/game_screens/level_icon.tscn" id="1_bqyuq"]
 [ext_resource type="Script" path="res://scenes/game_screens/level_select.gd" id="1_vl4ct"]
 [ext_resource type="PackedScene" uid="uid://b2dn36syi1qu4" path="res://scenes/game_screens/player_icon.tscn" id="3_2mikj"]
 [ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/bloban/bloban_idle.png" id="4_shhc0"]
+[ext_resource type="FontFile" uid="uid://cflfcdxy3mylt" path="res://assets/fonts/PixelOperator8.ttf" id="5_rlj66"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2y4wm"]
 atlas = ExtResource("4_shhc0")
@@ -212,3 +213,15 @@ position = Vector2(35, 25)
 scale = Vector2(3.5, 3.5)
 sprite_frames = SubResource("SpriteFrames_cm65b")
 animation = &"Idle"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 131.0
+offset_right = 1035.0
+offset_bottom = 239.0
+theme_override_fonts/font = ExtResource("5_rlj66")
+text = "USE WASD / ARROW KEYS TO MOVE
+
+
+PRESS ENTER TO SELECT LEVEL"
