@@ -5,3 +5,7 @@ func _on_button_pressed():
 
 func _on_button_2_pressed():
 	get_tree().quit()
+
+
+func _on_ready() -> void:
+	MusicPlayer.play_title_music()

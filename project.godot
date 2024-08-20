@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 gameManager="*res://scripts/Global/gamemanager.gd"
+MusicPlayer="*res://scenes/nonviewable_obj/music_player.tscn"
 
 [input]
 
