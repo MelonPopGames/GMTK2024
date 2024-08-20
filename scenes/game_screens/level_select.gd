@@ -3,6 +3,8 @@ class_name LevelSelect
 
 @onready var levels: LevelIcon = $LevelIcon
 
+#omfg its 5am i want to shootmyself
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	MusicPlayer.play_title_music()

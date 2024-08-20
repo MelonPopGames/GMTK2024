@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="8_4bng1"]
 [ext_resource type="PackedScene" uid="uid://cx1bqqp4wqpx0" path="res://scenes/viewable_obj/rat.tscn" id="8_ls6wk"]
 [ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="11_1jwjt"]
-[ext_resource type="PackedScene" path="res://scenes/viewable_obj/game_win_zone.tscn" id="11_b2dih"]
+[ext_resource type="PackedScene" uid="uid://dvclcwk5bidqq" path="res://scenes/viewable_obj/game_win_zone.tscn" id="11_b2dih"]
 [ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="12_ybybk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b3ywo"]

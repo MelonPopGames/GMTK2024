@@ -324,4 +324,4 @@ position = Vector2(952, 508)
 texture = ExtResource("7_da3qm")
 script = ExtResource("11_v55a7")
 
-[node name="fix_" type="Node" parent="."]
+[node name="idk" type="Node" parent="."]
