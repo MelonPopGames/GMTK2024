@@ -7,9 +7,9 @@ var zoom = Vector2(1,1)
 var newZoom = 1
 var playerHP = 1
 var gameWin = false
-var timeCanChangeMax: int = 3
 var timeCanChange: int = 3
 var changeCameraSize = false
+var completedLevels = [false, false, false, false]
 
 #Three player sizes, 2 is default, 1 is small, 3 is large
 var playerSize = 2
@@ -22,8 +22,7 @@ func gameStart(maxTimeChanges):
 	gameManager.playerSize = 2
 	gameManager.canChangeSize = true
 	gameManager.playerHP = 1
-	gameManager.timeCanChangeMax = maxTimeChanges
-	gameManager.timeCanChange = timeCanChangeMax
+	gameManager.timeCanChange = maxTimeChanges
 
 func adjustZoom(defaultValue, marketpliers):
 	newZoom = defaultValue * marketpliers
