@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvclcwk5bidqq"]
+
+[ext_resource type="Script" path="res://scripts/game_win_zone.gd" id="1_tr0vq"]
+[ext_resource type="Texture2D" uid="uid://c2jydv4f3el3y" path="res://assets/sprites/tree_and_bush.png" id="2_5d2n5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sg4q4"]
+size = Vector2(27, 17)
+
+[node name="GameWinZone" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_tr0vq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, -8.5)
+shape = SubResource("RectangleShape2D_sg4q4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -29)
+texture = ExtResource("2_5d2n5")
+region_enabled = true
+region_rect = Rect2(17, 6, 46, 58)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
