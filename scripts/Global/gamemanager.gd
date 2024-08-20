@@ -5,6 +5,7 @@ var newZoom = 1
 var playerHP = 1
 var gameWin = false
 var timeCanChange = 3
+var changeCameraSize = false
 
 #Three player sizes, 2 is default, 1 is small, 3 is large
 var playerSize = 2
@@ -17,8 +18,6 @@ func gameStart():
 	gameManager.playerSize = 2
 	gameManager.canChangeSize = true
 	gameManager.playerHP = 1
-
-
 
 
 

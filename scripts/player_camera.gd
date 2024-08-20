@@ -11,13 +11,16 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if gameManager.canChangeSize:
+	if gameManager.changeCameraSize:
 		if Input.is_action_just_released("ZoomOut"):
 			zoom = game_manager.adjustZoom(defaultZoom, 0.5)
 			set_zoom(zoom)
+			gameManager.changeCameraSize = false
 		elif Input.is_action_just_released("ZoomIn"):
 			zoom	 = game_manager.adjustZoom(defaultZoom, 2)	
 			set_zoom(zoom)
+			gameManager.changeCameraSize = false
 		elif Input.is_action_just_released("ZoomDefault"):
 			zoom	 = game_manager.adjustZoom(defaultZoom, 1)	
 			set_zoom(zoom)
+			gameManager.changeCameraSize = false
