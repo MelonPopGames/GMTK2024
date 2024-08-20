@@ -11,20 +11,13 @@ position = Vector2(577.5, 329)
 scale = Vector2(1.12402, 1.28516)
 texture = ExtResource("2_tb7hu")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 469.0
-offset_top = 271.0
-offset_right = 692.0
-offset_bottom = 368.0
-text = "PLAY"
-
-[node name="Button2" type="Button" parent="."]
-offset_left = 468.0
-offset_top = 406.0
-offset_right = 691.0
-offset_bottom = 503.0
-text = "QUIT"
+[node name="Start and exit" type="Label" parent="."]
+offset_left = 491.0
+offset_top = 577.0
+offset_right = 673.0
+offset_bottom = 639.0
+text = "Press Enter to start
+Press Esc to exit"
+horizontal_alignment = 1
 
 [connection signal="ready" from="." to="." method="_on_ready"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
