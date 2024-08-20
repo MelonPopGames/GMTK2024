@@ -4,6 +4,8 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	gameManager.gameWin = true
+	gameManager.completedLevels[gameManager.currentLevel - 1] = true
+	gameManager.currentLevel = 0
 	timer.start()
 
 func _on_timer_timeout() -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://bl6oprc4gru3k"]
+[gd_scene load_steps=33 format=4 uid="uid://bl6oprc4gru3k"]
 
 [ext_resource type="PackedScene" uid="uid://djvcydiioemoq" path="res://scenes/game_screens/level_icon.tscn" id="1_bqyuq"]
 [ext_resource type="Script" path="res://scenes/game_screens/level_select.gd" id="1_vl4ct"]
@@ -6,6 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://ctjygr35yobq7" path="res://assets/sprites/bloban/bloban_idle.png" id="4_shhc0"]
 [ext_resource type="FontFile" uid="uid://cflfcdxy3mylt" path="res://assets/fonts/PixelOperator8.ttf" id="5_rlj66"]
 [ext_resource type="Texture2D" uid="uid://dv6d8617c5oiq" path="res://assets/sprites/world_tileset.png" id="6_vwbd8"]
+[ext_resource type="Texture2D" uid="uid://crj46su3rkvhm" path="res://assets/sprites/nuke_button.png" id="7_da3qm"]
+[ext_resource type="Script" path="res://scenes/game_screens/level_one_button.gd" id="8_deqnk"]
+[ext_resource type="Script" path="res://scenes/game_screens/level_two_button.gd" id="9_motxg"]
+[ext_resource type="Script" path="res://scenes/game_screens/level_three_button.gd" id="10_ioc7o"]
+[ext_resource type="Script" path="res://scenes/game_screens/level_four_button.gd" id="11_v55a7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jwqc5"]
 texture = ExtResource("6_vwbd8")
@@ -274,6 +279,7 @@ next_scene_path = "res://scenes/game_screens/GameLevels/level_four.tscn"
 next_level_up = NodePath("../LevelIcon3")
 
 [node name="PlayerIcon" parent="." instance=ExtResource("3_2mikj")]
+z_index = 10
 layout_mode = 0
 offset_right = 64.0
 offset_bottom = 64.0
@@ -297,3 +303,23 @@ text = "USE WASD / ARROW KEYS TO MOVE
 
 
 PRESS ENTER TO SELECT LEVEL"
+
+[node name="LevelOne" type="Sprite2D" parent="."]
+position = Vector2(198, 228)
+texture = ExtResource("7_da3qm")
+script = ExtResource("8_deqnk")
+
+[node name="LevelTwo" type="Sprite2D" parent="."]
+position = Vector2(576, 229)
+texture = ExtResource("7_da3qm")
+script = ExtResource("9_motxg")
+
+[node name="LevelThree" type="Sprite2D" parent="."]
+position = Vector2(951, 233)
+texture = ExtResource("7_da3qm")
+script = ExtResource("10_ioc7o")
+
+[node name="LevelFour" type="Sprite2D" parent="."]
+position = Vector2(952, 508)
+texture = ExtResource("7_da3qm")
+script = ExtResource("11_v55a7")

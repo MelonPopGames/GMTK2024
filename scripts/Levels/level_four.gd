@@ -5,3 +5,4 @@ extends Node2D
 func _ready() -> void:
 	MusicPlayer.play_level_music_2()
 	gameManager.gameStart(10)
+	gameManager.currentLevel = 4
