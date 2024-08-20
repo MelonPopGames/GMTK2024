@@ -84,6 +84,11 @@ func _process(delta: float) -> void:
 			gameManager.timeCanChange -= 1
 			gameManager.changeCameraSize = true
 	
+	if Input.is_action_just_pressed("RestartLevel"):
+		get_tree().reload_current_scene()
+	elif Input.is_action_just_pressed("LeaveLevel"):
+		get_tree().change_scene_to_file("res://scenes/game_screens/level_select.tscn")
+	
 	if gameManager.playerSize == 2:
 		SPEED = 150.0
 		JUMP_VELOCITY = -300.0

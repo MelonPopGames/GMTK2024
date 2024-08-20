@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr0sivy3t8tk4"]
+
+[ext_resource type="TileSet" uid="uid://dqqd6vspgwxf" path="res://assets/sprites/tileset.tres" id="1_0a5pt"]
+
+[node name="TimeMap" type="Node"]
+
+[node name="Background" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_0a5pt")
+
+[node name="Midground" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_0a5pt")
+
+[node name="Foreground" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_0a5pt")

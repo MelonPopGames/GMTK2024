@@ -12,6 +12,4 @@ func _on_body_entered(body):
 		
 
 func _on_timer_timeout():
-	gameManager.playerSize = 2
-	gameManager.playerHP = 1
 	get_tree().reload_current_scene()
