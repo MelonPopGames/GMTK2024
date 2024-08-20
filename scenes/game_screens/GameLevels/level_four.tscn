@@ -1,6 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://cubj6vexom04f"]
+[gd_scene load_steps=9 format=3 uid="uid://cubj6vexom04f"]
 
 [ext_resource type="Script" path="res://scripts/Levels/level_four.gd" id="1_m7dnl"]
+[ext_resource type="Script" path="res://scripts/size_info/size_three.gd" id="2_rgeb5"]
+[ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/nonviewable_obj/gamemanager.tscn" id="3_nncab"]
+[ext_resource type="PackedScene" uid="uid://dx2g82ahm3te" path="res://scenes/viewable_obj/player.tscn" id="4_iutd6"]
+[ext_resource type="PackedScene" uid="uid://ns2ga3gsdigr" path="res://scenes/nonviewable_obj/player_camera.tscn" id="5_qts2h"]
+[ext_resource type="TileSet" uid="uid://dqqd6vspgwxf" path="res://assets/sprites/tileset.tres" id="6_pjay3"]
+[ext_resource type="PackedScene" uid="uid://fv7g5f7oe8li" path="res://scenes/nonviewable_obj/death_fix.tscn" id="7_b4af0"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mbdxh"]
+distance = -194.0
 
 [node name="LevelFour" type="Node2D"]
 script = ExtResource("1_m7dnl")
+
+[node name="Size" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_rgeb5")
+
+[node name="GameManager" parent="." instance=ExtResource("3_nncab")]
+unique_name_in_owner = true
+
+[node name="Player" parent="." instance=ExtResource("4_iutd6")]
+
+[node name="PlayerCamera" parent="Player" instance=ExtResource("5_qts2h")]
+
+[node name="TileMap" type="Node" parent="."]
+
+[node name="mid" type="TileMapLayer" parent="TileMap"]
+tile_set = ExtResource("6_pjay3")
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Enemys" type="Node" parent="."]
+
+[node name="CantChangeSizeZones" type="Node" parent="."]
+
+[node name="DeathFix" parent="." instance=ExtResource("7_b4af0")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathFix"]
+shape = SubResource("WorldBoundaryShape2D_mbdxh")
