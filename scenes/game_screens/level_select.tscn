@@ -7,10 +7,10 @@
 [ext_resource type="FontFile" uid="uid://cflfcdxy3mylt" path="res://assets/fonts/PixelOperator8.ttf" id="5_rlj66"]
 [ext_resource type="Texture2D" uid="uid://dv6d8617c5oiq" path="res://assets/sprites/world_tileset.png" id="6_vwbd8"]
 [ext_resource type="Texture2D" uid="uid://crj46su3rkvhm" path="res://assets/sprites/nuke_button.png" id="7_da3qm"]
-[ext_resource type="Script" path="res://scenes/game_screens/level_one_button.gd" id="8_deqnk"]
-[ext_resource type="Script" path="res://scenes/game_screens/level_two_button.gd" id="9_motxg"]
-[ext_resource type="Script" path="res://scenes/game_screens/level_three_button.gd" id="10_ioc7o"]
-[ext_resource type="Script" path="res://scenes/game_screens/level_four_button.gd" id="11_v55a7"]
+[ext_resource type="Script" path="res://scripts/Levels/level_one_button.gd" id="8_deqnk"]
+[ext_resource type="Script" path="res://scripts/Levels/level_two_button.gd" id="9_motxg"]
+[ext_resource type="Script" path="res://scripts/Levels/level_three_button.gd" id="10_ioc7o"]
+[ext_resource type="Script" path="res://scripts/Levels/level_four_button.gd" id="11_v55a7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jwqc5"]
 texture = ExtResource("6_vwbd8")
