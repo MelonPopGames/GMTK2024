@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://beqldfn57ihbb"]
+[gd_scene load_steps=21 format=4 uid="uid://beqldfn57ihbb"]
 
 [ext_resource type="Script" path="res://scripts/test_scene.gd" id="1_0jiqv"]
 [ext_resource type="PackedScene" uid="uid://dsj3dhlvnhkc" path="res://scenes/nonviewable_obj/gamemanager.tscn" id="2_wxxwp"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dv6d8617c5oiq" path="res://assets/sprites/world_tileset.png" id="10_jdk7p"]
 [ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="10_qcqo6"]
 [ext_resource type="PackedScene" uid="uid://y8poosedrixx" path="res://scenes/viewable_obj/pushable_box.tscn" id="12_71ori"]
+[ext_resource type="PackedScene" uid="uid://dvclcwk5bidqq" path="res://scenes/viewable_obj/game_win_zone.tscn" id="13_udbfe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v7wla"]
 size = Vector2(18, 40)
@@ -305,3 +306,6 @@ shape = SubResource("RectangleShape2D_r3wdv")
 
 [node name="PushableBox" parent="." instance=ExtResource("12_71ori")]
 position = Vector2(130, 17)
+
+[node name="GameWinZone" parent="." instance=ExtResource("13_udbfe")]
+position = Vector2(256, 32)
