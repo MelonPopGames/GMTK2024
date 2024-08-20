@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://cubj6vexom04f"]
+[gd_scene load_steps=19 format=4 uid="uid://cubj6vexom04f"]
 
 [ext_resource type="Script" path="res://scripts/Levels/level_four.gd" id="1_m7dnl"]
 [ext_resource type="Script" path="res://scripts/size_info/size_three.gd" id="2_u4arn"]
@@ -12,7 +12,17 @@
 [ext_resource type="PackedScene" uid="uid://dvclcwk5bidqq" path="res://scenes/viewable_obj/game_win_zone.tscn" id="8_q4iyf"]
 [ext_resource type="PackedScene" uid="uid://oiselovvcp46" path="res://scenes/viewable_obj/dog.tscn" id="8_seju2"]
 [ext_resource type="FontFile" uid="uid://cflfcdxy3mylt" path="res://assets/fonts/PixelOperator8.ttf" id="8_w4d2m"]
+[ext_resource type="PackedScene" uid="uid://b1efdhldwcw4p" path="res://scenes/nonviewable_obj/fixed_size_area.tscn" id="11_antr7"]
 [ext_resource type="PackedScene" uid="uid://cesr08bk2dgn" path="res://scenes/viewable_obj/rabbit.tscn" id="13_adhq4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f26w2"]
+size = Vector2(74, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bsu0h"]
+size = Vector2(74, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfjrd"]
+size = Vector2(42, 20)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_10047"]
 distance = -196.0
@@ -101,6 +111,25 @@ position = Vector2(247, -231)
 position = Vector2(248, -136)
 
 [node name="CantChangeSizeZones" type="Node" parent="."]
+
+[node name="FixedSizeArea" parent="CantChangeSizeZones" instance=ExtResource("11_antr7")]
+position = Vector2(607, -67)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CantChangeSizeZones/FixedSizeArea"]
+position = Vector2(-7, 0)
+shape = SubResource("RectangleShape2D_f26w2")
+
+[node name="FixedSizeArea2" parent="CantChangeSizeZones" instance=ExtResource("11_antr7")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CantChangeSizeZones/FixedSizeArea2"]
+position = Vector2(152, -20)
+shape = SubResource("RectangleShape2D_bsu0h")
+
+[node name="FixedSizeArea3" parent="CantChangeSizeZones" instance=ExtResource("11_antr7")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CantChangeSizeZones/FixedSizeArea3"]
+position = Vector2(1720, -131)
+shape = SubResource("RectangleShape2D_jfjrd")
 
 [node name="DeathFix" parent="." instance=ExtResource("7_5pmlt")]
 
