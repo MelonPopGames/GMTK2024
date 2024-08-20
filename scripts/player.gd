@@ -68,17 +68,17 @@ func _physics_process(delta):
 
 func _process(delta: float) -> void:
 	if gameManager.canChangeSize and gameManager.timeCanChange != 0:
-		if Input.is_action_just_released("ZoomOut"):
+		if Input.is_action_just_released("ZoomOut") and gameManager.playerSize != 3:
 			scale = game_manager.adjustZoom(defaultScale, 2)
 			gameManager.playerSize = 3
 			gameManager.timeCanChange -= 1
 			gameManager.changeCameraSize = true
-		elif Input.is_action_just_released("ZoomIn"):
+		elif Input.is_action_just_released("ZoomIn") and gameManager.playerSize != 1:
 			scale = game_manager.adjustZoom(defaultScale, 0.5)
 			gameManager.playerSize = 1
 			gameManager.timeCanChange -= 1
 			gameManager.changeCameraSize = true
-		elif Input.is_action_just_released("ZoomDefault"):
+		elif Input.is_action_just_released("ZoomDefault") and gameManager.playerSize != 2:
 			scale = game_manager.adjustZoom(defaultScale, 1)
 			gameManager.playerSize = 2
 			gameManager.timeCanChange -= 1
